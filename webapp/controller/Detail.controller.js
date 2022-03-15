@@ -37,6 +37,7 @@ sap.ui.define([
         onLinePress: function(oEvent){
             var oBc = oEvent.getSource().getBindingContext();
             var oData = oBc.getObject();
+            
             window.alert(`${oBc.getPath()}: ${oData.ID}/${oData.Name}`);
         },
 
